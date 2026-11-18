@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050a0c">
+<meta name="robots" content="noindex, nofollow">
+<title>404 — Sector Not Found · FIB Duty Toolkit</title>
+<meta name="description" content="This address is not in the FIB archive. Return to the FIB Duty Toolkit for EN2 City.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 132'%3E%3Crect width='120' height='132' rx='24' fill='%23071114'/%3E%3Cpath d='M60 10 106 26v36c0 26-18 49-46 57-28-8-46-31-46-57V26L60 10Z' fill='none' stroke='%23e2b887' stroke-width='2.4'/%3E%3Cpath d='M60 32 65 46 79 46.5 68 55 71.5 69 60 61 48.5 69 52 55 41 46.5 55 46Z' fill='%23e2b887'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#050a0c;--bg-2:#081216;--panel:rgba(11,23,27,.72);
+    --line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.15);
+    --text:#edf2ef;--text-2:#c3cfca;--muted:#91a39c;--muted-2:#63766f;
+    --gold:#e2b887;--gold-2:#f6e0bd;--gold-3:#b98a54;--gold-rgb:226,184,135;
+    --jade:#7ad9bd;--danger:#e3897f;
+    --serif:'Instrument Serif',Georgia,serif;
+    --display:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+    --gold-glow:0 0 40px rgba(var(--gold-rgb),.16);
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;min-height:100%;min-height:100svh;overflow-x:hidden;
+    display:flex;flex-direction:column;
+    background:
+      radial-gradient(1100px 720px at 10% -10%,rgba(28,58,64,.55),transparent 62%),
+      radial-gradient(900px 680px at 100% 4%,rgba(33,44,72,.3),transparent 58%),
+      radial-gradient(900px 800px at 50% 112%,rgba(35,44,31,.22),transparent 65%),
+      var(--bg);
+    color:var(--text);font-family:var(--body);font-size:15px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    position:relative;isolation:isolate;
+  }
+  .noise{
+    position:fixed;inset:0;z-index:-1;opacity:.045;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")
+  }
+  .grid{
+    position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(rgba(226,184,135,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(226,184,135,.05) 1px,transparent 1px);
+    background-size:56px 56px;
+    mask-image:radial-gradient(110% 90% at 50% 30%,#000 10%,transparent 78%);
+    -webkit-mask-image:radial-gradient(110% 90% at 50% 30%,#000 10%,transparent 78%);
+  }
+  .scan{
+    position:fixed;left:0;right:0;top:0;height:1px;z-index:0;pointer-events:none;
+    background:linear-gradient(90deg,transparent,rgba(226,184,135,.45),transparent);
+    opacity:.5;animation:scan 9s linear infinite
+  }
+  @keyframes scan{0%{transform:translateY(-2vh);opacity:0}8%{opacity:.5}92%{opacity:.5}100%{transform:translateY(102vh);opacity:0}}
+
+  .bar{
+    position:relative;z-index:2;display:flex;align-items:center;gap:16px;
+    padding:18px clamp(18px,3.2vw,44px);border-bottom:1px solid var(--line);
+    background:rgba(5,11,13,.5);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)
+  }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;min-width:0}
+  .brand-mark{width:38px;height:42px;flex:0 0 auto;filter:drop-shadow(0 6px 16px rgba(var(--gold-rgb),.24));transition:transform .5s var(--ease)}
+  .brand:hover .brand-mark{transform:translateY(-2px) rotate(-1deg)}
+  .brand-mark svg{width:100%;height:100%;display:block}  .brand-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .brand-text b{font:800 14px/1.15 var(--display);letter-spacing:-.015em;color:#fff;white-space:nowrap}
+  .brand-text span{font:600 8px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .status{
+    margin-left:auto;display:inline-flex;align-items:center;gap:9px;padding:0 12px;height:32px;
+    border:1px solid var(--line-2);border-radius:999px;background:rgba(255,255,255,.03);
+    font:500 9px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap
+  }
+  .status .dot{width:5px;height:5px;border-radius:50%;background:var(--jade);box-shadow:0 0 0 3px rgba(122,217,189,.13)}
+  .status b{font-weight:600;color:var(--text-2);letter-spacing:.06em}
+
+  main{
+    position:relative;z-index:1;flex:1 0 auto;width:100%;max-width:880px;margin:0 auto;
+    padding:clamp(34px,7vh,72px) clamp(20px,4vw,40px) clamp(40px,8vh,80px);
+    display:flex;flex-direction:column;align-items:center;text-align:center
+  }
+  .seal{
+    position:absolute;top:clamp(8px,4vh,44px);left:50%;transform:translateX(-50%);
+    width:min(420px,80vw);height:min(420px,80vw);color:rgba(var(--gold-rgb),.1);
+    pointer-events:none;z-index:-1;animation:spin 90s linear infinite
+  }
+  @keyframes spin{to{transform:translateX(-50%) rotate(360deg)}}
+
+  .code{
+    position:relative;font:800 clamp(96px,22vw,190px)/.86 var(--display);letter-spacing:-.07em;
+    background:linear-gradient(168deg,#f8e9cd 4%,#e2b887 38%,#a97845 76%,#6c4a29 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 24px 60px rgba(var(--gold-rgb),.16));
+    user-select:none
+  }
+  .code::before{
+    content:"404";position:absolute;inset:0;color:transparent;
+    -webkit-text-stroke:1px rgba(255,255,255,.14);transform:translate(3px,3px);z-index:-1
+  }
+  .eyebrow{
+    display:flex;align-items:center;gap:12px;margin-top:clamp(18px,3vh,28px);
+    font:600 9.5px/1 var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--gold)
+  }
+  .eyebrow .rule{width:36px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+  .eyebrow .rule.r{background:linear-gradient(90deg,var(--gold),transparent)}
+  .eyebrow .lock{width:12px;height:12px;opacity:.85}
+
+  h1{
+    margin:18px 0 0;font:800 clamp(30px,5vw,46px)/1.06 var(--display);
+    letter-spacing:-.035em;color:#fff
+  }
+  h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--gold-2)}
+  .lede{margin:16px 0 0;max-width:50ch;font-size:13.5px;line-height:1.8;color:var(--muted)}
+  .lede b{color:var(--text-2);font-weight:600}
+
+  .path{
+    display:flex;align-items:center;gap:10px;max-width:100%;margin-top:26px;
+    padding:8px 14px;border:1px solid var(--line);border-radius:999px;
+    background:rgba(0,0,0,.28);font:500 10px var(--mono);letter-spacing:.02em;color:var(--muted)
+  }
+  .path span{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2);flex:0 0 auto}
+  .path code{color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:52vw}
+
+  .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;height:46px;padding:0 22px;
+    border-radius:10px;border:1px solid transparent;text-decoration:none;cursor:pointer;
+    font:700 11.5px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;
+    transition:transform .35s var(--ease),background .3s,border-color .3s,color .3s,box-shadow .3s
+  }
+  .btn svg{width:15px;height:15px}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:active{transform:none}
+  .btn-primary{
+    color:#0a1518;background:linear-gradient(150deg,var(--gold-2),var(--gold) 55%,var(--gold-3));
+    box-shadow:0 14px 34px rgba(var(--gold-rgb),.22)
+  }
+  .btn-primary:hover{box-shadow:0 20px 44px rgba(var(--gold-rgb),.3)}
+  .btn-ghost{color:var(--text-2);border-color:var(--line-2);background:rgba(255,255,255,.03)}
+  .btn-ghost:hover{border-color:rgba(var(--gold-rgb),.45);color:#fff;background:rgba(var(--gold-rgb),.07)}
+
+  .quick{
+    display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 18px;
+    margin-top:34px;padding-top:22px;border-top:1px solid var(--line);width:100%;
+    font:500 9px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2)
+  }
+  .quick span{flex:0 0 auto}
+  .quick a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;transition:.25s}
+  .quick a:hover{color:var(--gold);border-color:rgba(var(--gold-rgb),.5)}
+
+  footer{
+    position:relative;z-index:1;flex:0 0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;
+    max-width:100%;padding:16px clamp(18px,3.2vw,44px);border-top:1px solid var(--line);
+    font:500 8px/1.5 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);
+    background:rgba(5,11,13,.4)
+  }
+  footer b{color:var(--gold);font-weight:600;letter-spacing:.16em}
+
+  @media (max-width:640px){
+    .brand-text span{display:none}
+    .status{padding:0 10px;font-size:8px}
+    h1{max-width:16ch}
+    .path code{max-width:46vw}
+    .btn{height:44px;padding:0 16px;font-size:10.5px}
+    .eyebrow{font-size:8px;letter-spacing:.22em;gap:9px}
+    .eyebrow .rule{width:22px}
+    footer{justify-content:center;text-align:center}
+  }
+  @media (max-width:400px){
+    .status .lbl{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+<div class="grid" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="brand" href="./index.html" data-home aria-label="FIB Duty Toolkit home">
+    <span class="brand-mark">
+      <svg viewBox="0 0 120 132" aria-hidden="true">
+        <defs>
+          <linearGradient id="nfg" x1="0" y1="0" x2=".35" y2="1">
+            <stop offset="0" stop-color="#f8e9cd"/><stop offset=".38" stop-color="#e8c49a"/>
+            <stop offset=".72" stop-color="#d3a56d"/><stop offset="1" stop-color="#9d6c3c"/>
+          </linearGradient>
+          <linearGradient id="nfs" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#122a35"/><stop offset=".55" stop-color="#0a1922"/><stop offset="1" stop-color="#040b0f"/>
+          </linearGradient>
+        </defs>
+        <path d="M60 3.5 112 21.5v41.8c0 30.2-20.8 56.9-52 66.2C28.8 120.2 8 93.5 8 63.3V21.5L60 3.5Z" fill="url(#nfs)" stroke="url(#nfg)" stroke-width="2.6" stroke-linejoin="round"/>
+        <path d="M60 11.5 104.5 26.6v36.4c0 26.3-18.2 49.7-44.5 57.8C33.7 112.7 15.5 89.3 15.5 63V26.6L60 11.5Z" fill="none" stroke="url(#nfg)" stroke-width=".9" opacity=".55"/>
+        <path d="M60 27.5 65.3 42.7 80.9 43.2 68.6 52.8 72.9 67.8 60 59 47.1 67.8 51.4 52.8 39.1 43.2 54.7 42.7Z" fill="url(#nfg)"/>
+        <rect x="30.5" y="78" width="59" height="19" rx="3.6" fill="#050f15" stroke="url(#nfg)" stroke-width="1.1"/>
+        <text x="60" y="91.6" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11.4" font-weight="600" letter-spacing="3.4" fill="url(#nfg)">FIB</text>
+      </svg>
+    </span>
+    <span class="brand-text"><b>FIB Duty Toolkit</b><span>EN2 City · Law Enforcement Operations</span></span>
+  </a>
+  <div class="status" title="Grand RP server time (UTC+1)">
+    <span class="dot"></span><span class="lbl">Grand RP</span><b id="clock">--:--:--</b>
+  </div>
+</header>
+
+<main>
+  <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width=".6"/>
+    <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width=".4" stroke-dasharray="1 5"/>
+    <circle cx="100" cy="100" r="62" fill="none" stroke="currentColor" stroke-width=".8"/>
+    <path d="M100 46 112 91 157 103 112 115 100 160 88 115 43 103 88 91Z" fill="none" stroke="currentColor" stroke-width="1"/>
+    <path d="M100 58 109 93 144 103 109 113 100 148 91 113 56 103 91 93Z" fill="currentColor" opacity=".16"/>
+    <circle cx="100" cy="100" r="7" fill="currentColor" opacity=".35"/>
+  </svg>
+
+  <div class="code" aria-hidden="true">404</div>
+
+  <div class="eyebrow">
+    <span class="rule"></span>
+    <svg class="lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+    Access denied · Unknown address
+    <span class="rule r"></span>
+  </div>
+
+  <h1>This page isn't<br> in <em>the file.</em></h1>
+  <p class="lede">The address you requested doesn't exist in the EN2 City archive. It may have been moved, renamed or never filed. <b>Return to the toolkit</b> and continue your shift.</p>
+
+  <div class="path" title="Requested address"><span>Requested</span><code id="path">/</code></div>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="./index.html" data-home>
+      Return to Toolkit
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5.5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <button class="btn btn-ghost" id="back" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5 6 11l6 6M6 11h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Go back
+    </button>
+  </div>
+
+  <div class="quick">
+    <span>Filed under</span>
+    <a href="./index.html#toolkit" data-home>Penal Code</a>
+    <a href="./index.html#toolkit" data-home>RP Commands</a>
+    <a href="./index.html#toolkit" data-home>Department Radio</a>
+    <a href="./index.html#toolkit" data-home>Legislation</a>
+  </div>
+</main>
+
+<footer>
+  <span>FIB Duty Toolkit · EN2 City</span>
+  <span>Made by <b>NinjaFlexx !!</b></span>
+</footer>
+
+<script>
+(function () {
+  var home = './index.html';
+  if (location.protocol !== 'file:' && location.hostname.indexOf('github.io') > -1) {
+    var seg = location.pathname.split('/').filter(Boolean)[0] || '';
+    home = (seg && seg.indexOf('.') === -1 ? '/' + seg + '/' : '/');
+  } else if (/^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(location.hostname)) {
+    home = './index.html';
+  } else if (location.protocol !== 'file:') {
+    home = '/';
+  }
+  document.querySelectorAll('[data-home]').forEach(function (a) {
+    var hash = a.getAttribute('href').split('#')[1];
+    a.setAttribute('href', home + (hash ? '#' + hash : ''));
+  });
+
+  var path = document.getElementById('path');
+  if (path) path.textContent = (location.pathname || '/') + (location.search || '');
+
+  var back = document.getElementById('back');
+  if (back) back.addEventListener('click', function () {
+    if (history.length > 1) history.back();
+    else location.href = home;
+  });
+
+  var clock = document.getElementById('clock');
+  function tick() {
+    var d = new Date();
+    d.setMinutes(d.getMinutes() + d.getTimezoneOffset() + 60);
+    function p(n) { return n < 10 ? '0' + n : '' + n; }
+    if (clock) clock.textContent = p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
